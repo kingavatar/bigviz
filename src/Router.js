@@ -42,7 +42,7 @@ function Router() {
           <Sidebar />
           <Route
             path="/heatmap"
-            //  render={() => <Redirect from="/" to="/heatmap" />}
+             render={() => <Redirect from="/" to="/heatmap" />}
           >
             <Provider store={store}>
               <Map />
@@ -59,9 +59,9 @@ function Router() {
             </Provider>
           </Route>
           <Route path="/">
-            {/* <Provider store={store}>
+            <Provider store={store}>
               <Map />
-            </Provider> */}
+            </Provider>
           </Route>
         </div>
       </Switch>
