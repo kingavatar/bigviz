@@ -166,10 +166,17 @@ export default Vue.extend({
     ]);
     this.view.popup.content =
       "Click a feature on the map to view its attributes";
+    // this.csvLayer = new CSVLayer({
+    //   // URL to the CSV file
+    //   url:
+    //     "https://gist.githubusercontent.com/kingavatar/6ec884b4168e6ecbb72235ff3fd5b139/raw/a119f7d72f74e7acce6b2b9c7fd6f681c8eab692/100values.csv",
+    //   title: "Locations of Cell Coverage in Catalonia",
+    //   definitionExpression: "speed >= " + this.rangeValue,
+    // });
     this.csvLayer = new CSVLayer({
       // URL to the CSV file
       url:
-        "https://gist.githubusercontent.com/kingavatar/6ec884b4168e6ecbb72235ff3fd5b139/raw/a119f7d72f74e7acce6b2b9c7fd6f681c8eab692/100values.csv",
+        "http://localhost:5000/foo",
       title: "Locations of Cell Coverage in Catalonia",
       definitionExpression: "speed >= " + this.rangeValue,
     });
